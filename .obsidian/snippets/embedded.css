@@ -1,0 +1,47 @@
+/* Убирает левую линию у всех embed */
+.markdown-embed {
+  border-left: none !important;
+  padding-left: 0 !important;
+}
+
+/* Убирает отступы и фон */
+.markdown-embed-content {
+  max-height: unset;
+  padding: 0;
+  background-color: transparent;
+}
+
+/* Убирает заголовок embed */
+.markdown-embed-title {
+  display: none;
+}
+
+
+/* Скрываем саму метку-разделитель */
+.markdown-embed .stop-here {
+    display: none !important;
+}
+
+/* Скрываем всё, что идет СРАЗУ ПОСЛЕ метки на том же уровне */
+.markdown-embed .stop-here ~ * {
+    display: none !important;
+}
+
+/* Если Obsidian оборачивает блоки, скрываем последующие блоки-соседи */
+.markdown-embed div:has(> .stop-here) ~ div {
+    display: none !important;
+}
+
+
+/* Добавляет заголовок перед всеми встроенными заметками */
+.markdown-embed:before {
+    content: attr(alt);
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: var(--background-secondary);
+    border-left: 4px solid var(--interactive-accent);
+    border-radius: 3px;
+}

@@ -1,0 +1,16 @@
+.callout[data-callout="proof"] {
+    --callout-color: 129, 140, 3;
+    --callout-icon: book-check;
+}
+.callout[data-callout="th"] {
+    --callout-color: 204, 51, 0;
+    --callout-icon: mountain-snow;
+}
+.callout[data-callout="example"] {
+    --callout-color: 170, 0, 204;
+    --callout-icon: paperclip;
+}
+.callout[data-callout="def"] {
+    --callout-color: 59, 156, 168;
+    --callout-icon: feather;
+}

@@ -1,0 +1,9 @@
+.markdown-preview-view hr {
+    margin-top: 0em !important;
+    margin-bottom: 1em !important;
+    background-color: var(--hr-color) !important;
+}
+
+.markdown-preview-view h3 {
+    margin-bottom: 0.5em !important;
+}

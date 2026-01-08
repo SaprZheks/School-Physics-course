@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"e7dbadca9f65cca3","type":"file","file":"Кирпичики/Движение.md","x":-3340,"y":-1119,"width":380,"height":215,"color":"1"},
+		{"id":"52efcba30b523a37","type":"file","file":"Кирпичики/Описание движения.md","x":-2800,"y":-1116,"width":480,"height":209,"color":"1"},
+		{"id":"9db759da9d44052c","type":"file","file":"Кирпичики/Траектория движения.md","x":-2160,"y":-1130,"width":408,"height":237,"color":"1"},
+		{"id":"882759d338605bc1","x":-1620,"y":-1116,"width":350,"height":210,"color":"1","type":"file","file":"Кирпичики/Типы движения тел.md"},
+		{"id":"b6666860a7fb25af","type":"file","file":"Кирпичики/Типы движения точки.md","x":-1180,"y":-1118,"width":400,"height":212,"color":"1"},
+		{"id":"1d20074147829fa1","type":"file","file":"Кирпичики/Описание прямолинейного движения точки. Перемещение и путь, привязка ко времени.md","x":-640,"y":-1175,"width":420,"height":327,"color":"1"},
+		{"id":"c4aea82e64de534a","type":"file","file":"Кирпичики/Измерение длины.md","x":-1180,"y":-662,"width":405,"height":200,"color":"1"},
+		{"id":"584edf03e028fba4","type":"file","file":"Кирпичики/Измерение промежутков времени.md","x":-1180,"y":-382,"width":400,"height":243,"color":"1"},
+		{"id":"83f028e1dc53ac0f","type":"file","file":"Кирпичики/Как устроен штангенциркуль.md","x":-620,"y":-680,"width":420,"height":237,"color":"1"}
+	],
+	"edges":[
+		{"id":"20b648072fe52227","fromNode":"e7dbadca9f65cca3","fromSide":"right","toNode":"52efcba30b523a37","toSide":"left"},
+		{"id":"f1bb778a008c2445","fromNode":"52efcba30b523a37","fromSide":"right","toNode":"9db759da9d44052c","toSide":"left"},
+		{"id":"d7a61f9e37c236fb","fromNode":"b6666860a7fb25af","fromSide":"right","toNode":"1d20074147829fa1","toSide":"left"},
+		{"id":"b795388e96dbabee","fromNode":"c4aea82e64de534a","fromSide":"right","toNode":"83f028e1dc53ac0f","toSide":"left"},
+		{"id":"8e057fe395d42153","fromNode":"9db759da9d44052c","fromSide":"right","toNode":"882759d338605bc1","toSide":"left"},
+		{"id":"6abf8c81d80d2709","fromNode":"882759d338605bc1","fromSide":"right","toNode":"b6666860a7fb25af","toSide":"left"}
+	]
+}

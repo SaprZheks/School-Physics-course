@@ -1,0 +1,10 @@
+{
+  "theme": "system",
+  "accentColor": "#c7006a",
+  "enabledCssSnippets": [
+    "embedded",
+    "callouts light",
+    "Images position",
+    "preview"
+  ]
+}
