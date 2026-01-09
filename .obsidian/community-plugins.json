@@ -1,5 +1,6 @@
 [
   "dynamic-outline",
   "dataview",
-  "dataview-serializer"
+  "dataview-serializer",
+  "explorer-hider"
 ]
