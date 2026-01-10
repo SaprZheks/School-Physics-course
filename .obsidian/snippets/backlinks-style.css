@@ -1,0 +1,84 @@
+/* Убираем стандартный заголовок Obsidian с кнопками */
+.embedded-backlinks .nav-header, 
+.embedded-backlinks .backlink-header {
+    display: none !important;
+}
+
+/* Настраиваем контейнер: добавляем линию сверху и отступ */
+.embedded-backlinks {
+    border-top: 2px solid var(--background-modifier-border) !important;
+    margin-top: 2em !important;
+    padding-top: 1em !important;
+}
+
+/* Добавляем ваш текстовый заголовок */
+.embedded-backlinks .backlink-pane::before {
+    content: "Ссылки на эту страницу";
+    display: block;
+
+    font-size: var(--h3-size) !important;
+    font-weight: var(--h3-weight, 600) !important; 
+    font-family: var(--h3-font) !important;
+    font-style: var(--h3-style) !important;
+    color: var(--h3-color) !important;
+
+    margin-bottom: 0.7em;
+    color: var(--text-normal);
+}
+
+.embedded-backlinks .tree-item-self {
+    display: none !important;
+}
+
+
+.embedded-backlinks .tree-item-flair-outer {
+    display: none !important;
+}
+
+.embedded-backlinks .tree-item-self.search-result-file-title {
+    display: block !important;
+
+    width: fit-content;
+
+    font-size: var(--p-size) !important;
+    font-weight: var(--p-weight) !important; 
+    font-family: var(--p-font) !important;
+    font-style: var(--p-style) !important;
+    color: var(--interactive-accent) !important;
+
+    margin-bottom: 0.5em;
+    padding-left: 0em;
+    padding-right: 0em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+}
+
+.embedded-backlinks .tree-item-self.search-result-file-title::before {
+    display: none !important;
+}
+
+.embedded-backlinks .tree-item-self.search-result-file-title:hover {
+    background: inherit !important;
+    cursor: pointer;
+}
+
+.embedded-backlinks .tree-item-icon {
+    display: none !important;
+}
+
+.embedded-backlinks .tree-item-self.search-result-file-title .tree-item-inner {
+    width: fit-content;
+}
+
+
+.embedded-backlinks .search-result-file-matches {
+    display: none !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content {
+    padding-bottom: 0px !important;
+}
+
+body:has(.hide-links) .embedded-backlinks {
+    display: none !important;
+}

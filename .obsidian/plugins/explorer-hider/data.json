@@ -16,6 +16,12 @@
       "selector": "$",
       "hiddenInNav": true,
       "hiddenInBookmarks": false
+    },
+    {
+      "path": "README.md",
+      "type": "file",
+      "hiddenInNav": false,
+      "hiddenInBookmarks": false
     }
   ],
   "alwaysHideInBookmarks": false,
