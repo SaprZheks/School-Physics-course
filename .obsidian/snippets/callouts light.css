@@ -9,8 +9,45 @@
 .callout[data-callout="example"] {
     --callout-color: 170, 0, 204;
     --callout-icon: paperclip;
+    --hr-color: rgba(var(--callout-color),0.2);
 }
+
 .callout[data-callout="def"] {
-    --callout-color: 59, 156, 168;
+    --callout-color: 255, 0, 137;
     --callout-icon: feather;
+}
+
+.callout[data-callout="focus"] {
+    --callout-color: 255, 0, 137;
+    --callout-icon: none !important;
+    --callout-border-color: rgba(var(--callout-color),0.3);
+    --callout-border-radius: 0.7em;
+    border-radius: var(--callout-border-radius);
+    border-color: var(--callout-border-color);
+    border-width: 1px;
+
+    padding: 0.3em;
+    box-shadow: 0px 0px 5px 1px var(--callout-border-color);
+}
+
+.callout[data-callout="focus"]:hover {
+    box-shadow: 0px 0px 5px 2px var(--callout-border-color);
+}
+
+.callout[data-callout="focus"] .callout-title-inner {
+    color: var(--text-normal);
+    font-size: var(--p-size) !important;
+    font-weight: var(--p-weight) !important; 
+    font-family: var(--p-font) !important;
+    font-style: var(--p-style) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false]:has(.callout[data-callout="focus"]) {
+    contain: unset !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget, .cm-lang-base):hover {
+    box-shadow: 0px 0px 5px 1px var(--callout-border-color) !important;
+    border-radius: var(--callout-border-radius) !important;
+    overflow: unset !important;
 }
