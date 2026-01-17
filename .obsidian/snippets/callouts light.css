@@ -32,6 +32,7 @@
 
 .callout[data-callout="focus"]:hover {
     box-shadow: 0px 0px 5px 2px var(--callout-border-color);
+    transition: 0.1s;
 }
 
 .callout[data-callout="focus"] .callout-title-inner {
@@ -50,4 +51,118 @@
     box-shadow: 0px 0px 5px 1px var(--callout-border-color) !important;
     border-radius: var(--callout-border-radius) !important;
     overflow: unset !important;
+}
+
+:root {
+    --task-color: 174, 20, 217;
+    --task-content-margin: 0.6em;
+    --task-content-padding: 0.5em;
+}
+
+
+.callout[data-callout="task"] {
+    --callout-blend-mode: none !important;
+    --callout-color: var(--task-color);
+    --callout-icon: none !important;
+    --callout-border-color: rgba(var(--callout-color),0.3);
+    --callout-border-radius: 0.7em;
+    border-radius: var(--callout-border-radius);
+    border-color: var(--callout-border-color);
+    border-width: 1px;
+
+    --hr-color: rgba(var(--callout-color),0.5);
+    padding: 0.4em;
+    box-shadow: 0px 0px 5px 1px var(--callout-border-color);
+}
+
+.callout[data-callout="task"]:hover {
+    box-shadow: 0px 0px 5px 2px var(--callout-border-color);
+    transition: 0.1s;
+}
+
+.callout[data-callout="task"] .callout-title-inner {
+    font-weight: var(--h2-weight) !important; 
+    font-family: var(--h2-font) !important;
+    font-style: var(--h2-style) !important;
+}
+
+/* Контейнер для всей задачи */
+.callout[data-callout="task"] > .callout-content {
+    display: grid;
+    
+}
+
+/* Расположение блоков */
+.callout[data-callout="task-given"] {
+    grid-column: 1;
+
+    --callout-blend-mode: none !important;
+    --callout-color: var(--task-color);
+    --callout-icon: none !important;
+    --callout-border-color: rgba(var(--callout-color),0.3);
+    --callout-border-radius: 0.7em;
+    border-radius: var(--callout-border-radius);
+    border-color: var(--callout-border-color);
+    border-width: 1px;
+
+    min-width: 10em !important;
+
+    padding: var(--task-content-padding) !important;
+    margin: var(--task-content-margin) !important;
+    box-shadow: 0px 0px 5px 1px var(--callout-border-color);
+}
+
+.callout[data-callout="task-given"] .callout-title-inner {
+    font-weight: var(--h2-weight) !important; 
+    font-family: var(--h2-font) !important;
+    font-style: var(--h2-style) !important;
+}
+
+.callout[data-callout="task-solution"] { 
+    grid-column: 2; 
+    grid-row: 1 / span 2; /* Решение растягивается на высоту обоих блоков слева */
+
+    --callout-blend-mode: none !important;
+    --callout-color: var(--task-color);
+    --callout-icon: none !important;
+    --callout-border-color: rgba(var(--callout-color),0.3);
+    --callout-border-radius: 0.7em;
+    border-radius: var(--callout-border-radius);
+    border-color: var(--callout-border-color);
+    border-width: 1px;
+
+    padding: var(--task-content-padding) !important;
+    margin: var(--task-content-margin) !important;
+
+    box-shadow: 0px 0px 5px 1px var(--callout-border-color);
+}
+
+.callout[data-callout="task-solution"] .callout-title-inner {
+    color: var(--text-normal);
+    font-size: var(--p-size) !important;
+    font-weight: var(--p-weight) !important; 
+    font-family: var(--p-font) !important;
+    font-style: var(--p-style) !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false]:has(.callout[data-callout="task"]) {
+    contain: unset !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false]:has(.callout[data-callout="task-given"]) {
+    contain: unset !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false]:has(.callout[data-callout="task-solution"]) {
+    contain: unset !important;
+}
+
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+    .callout[data-callout="task"] > .callout-content {
+        display: flex;
+        flex-direction: column;
+    }
 }
