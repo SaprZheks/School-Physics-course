@@ -1,0 +1,26 @@
+/* Center tables on the page */
+
+table {
+    margin-top: 0em !important;
+    margin-bottom: 0em !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.cm-table-widget {
+   padding: 0em !important;
+}
+
+table th, td {
+    text-align: center !important;
+}
+
+.cm-table-widget .table-wrapper {
+    margin-top: 0em !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.cm-table-widget .table-wrapper .table-cell-wrapper {
+    text-align: center !important;
+}

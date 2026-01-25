@@ -78,6 +78,6 @@
     padding-bottom: 0px !important;
 }
 
-body:has(.hide-links) .embedded-backlinks {
+.workspace-leaf.mod-active:has(.hide-links) .embedded-backlinks {
     display: none !important;
 }

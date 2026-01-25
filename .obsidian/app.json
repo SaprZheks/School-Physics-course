@@ -12,5 +12,6 @@
   },
   "newLinkFormat": "relative",
   "defaultViewMode": "preview",
-  "focusNewTab": true
+  "focusNewTab": true,
+  "showUnsupportedFiles": false
 }
