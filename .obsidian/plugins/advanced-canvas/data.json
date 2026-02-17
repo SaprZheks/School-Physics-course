@@ -1,5 +1,5 @@
 {
-  "nodeTypeOnDoubleClick": "text",
+  "nodeTypeOnDoubleClick": "file",
   "alignNewNodesToGrid": true,
   "defaultTextNodeDimensions": [
     260,
@@ -13,8 +13,8 @@
   "maxNodeWidth": -1,
   "disableFontSizeRelativeToZoom": false,
   "canvasMetadataCompatibilityEnabled": false,
-  "treatFileNodeEdgesAsLinks": false,
-  "enableSingleNodeLinks": false,
+  "treatFileNodeEdgesAsLinks": true,
+  "enableSingleNodeLinks": true,
   "combineCustomStylesInDropdown": false,
   "nodeStylingFeatureEnabled": true,
   "customNodeStyleAttributes": [],

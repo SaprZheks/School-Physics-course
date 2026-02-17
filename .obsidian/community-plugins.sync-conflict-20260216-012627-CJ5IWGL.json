@@ -2,7 +2,5 @@
   "dynamic-outline",
   "explorer-hider",
   "advanced-canvas",
-  "runjs",
-  "automation",
-  "obsidian-shellcommands"
+  "sentinel"
 ]

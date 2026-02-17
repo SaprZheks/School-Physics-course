@@ -78,6 +78,7 @@
     padding-bottom: 0px !important;
 }
 
-.workspace-leaf.mod-active:has(.hide-links) .embedded-backlinks {
+/* Отрубаем обратные ссылки для навигации */
+.workspace-leaf:has(.hide-links) .embedded-backlinks {
     display: none !important;
 }

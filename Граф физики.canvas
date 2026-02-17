@@ -1,7 +1,6 @@
 {
 	"nodes":[
-		{"id":"a26785ef6146dbed","type":"group","x":-1200,"y":-1240,"width":2980,"height":440,"color":"5","label":"Прямолинейное движение"},
-		{"id":"52efcba30b523a37","type":"file","file":"Кирпичики/Описание движения.md","x":-2800,"y":-1116,"width":480,"height":209,"color":"1"},
+		{"id":"9db759da9d44052c","type":"file","file":"Кирпичики/Траектория движения.md","x":-2160,"y":-1130,"width":408,"height":237,"color":"1"},
 		{
 			"id":"882759d338605bc1",
 			"type":"file",
@@ -15,39 +14,32 @@
 			"height":210,
 			"color":"1"
 		},
-		{"id":"9db759da9d44052c","type":"file","file":"Кирпичики/Траектория движения.md","x":-2160,"y":-1130,"width":408,"height":237,"color":"1"},
-		{"id":"c4aea82e64de534a","type":"file","file":"Кирпичики/Измерение длины. Системы единиц.md","x":-1120,"y":-561,"width":405,"height":200,"color":"1"},
-		{"id":"83f028e1dc53ac0f","type":"file","file":"Кирпичики/Как устроен штангенциркуль.md","x":-560,"y":-579,"width":420,"height":237,"color":"1"},
-		{"id":"584edf03e028fba4","type":"file","file":"Кирпичики/Измерение промежутков времени.md","x":-430,"y":-240,"width":400,"height":243,"color":"1"},
-		{"id":"86529cc8364dc941","type":"file","file":"Кирпичики/Колебательное движение.md","x":-1752,"y":-227,"width":404,"height":218,"color":"1"},
-		{"id":"e7dbadca9f65cca3","type":"file","file":"Кирпичики/Движение.md","x":-3300,"y":-1119,"width":380,"height":215,"color":"1"},
 		{"id":"b6666860a7fb25af","type":"file","file":"Кирпичики/Типы движения точки.md","x":-1180,"y":-1117,"width":400,"height":212,"color":"1"},
-		{"id":"1d20074147829fa1","type":"file","file":"Кирпичики/Описание прямолинейного движения точки. Перемещение и путь, привязка ко времени.md","x":-640,"y":-1174,"width":420,"height":327,"color":"1"},
-		{"id":"e6ce9138bfc07f70","type":"file","file":"Кирпичики/Равномерное движение и его скорость.md","x":-30,"y":-1133,"width":440,"height":245,"color":"1"},
-		{"id":"a59ab0fdd60bd3c5","type":"file","file":"Кирпичики/Равномерное прямолинейное движение. Знак скорости в этом движении.md","x":560,"y":-1130,"width":580,"height":240,"color":"1"},
-		{"id":"20c06c81b0d866bf","type":"file","file":"Кирпичики/Единицы измерения скорости.md","x":1280,"y":-1120,"width":440,"height":220,"color":"1"},
-		{"id":"270b04aa9ce6d0b7","type":"file","file":"Кирпичики/Физическая величина и ее приращение.md","x":-650,"y":-1640,"width":440,"height":260,"color":"1"},
-		{"id":"ab2ed2432c7d1d2e","type":"file","file":"Кирпичики/Способы описания любой физической величины.md","x":1300,"y":-1640,"width":400,"height":260,"color":"1"}
+		{"id":"c4aea82e64de534a","type":"file","file":"Кирпичики/Измерение длины. Системы единиц.md","x":-2025,"y":427,"width":405,"height":200,"color":"1"},
+		{"id":"423fb29ba36849cd","type":"file","file":"Кирпичики/Описание положения вдоль прямой.md","x":-1445,"y":404,"width":380,"height":247,"color":"1"},
+		{"id":"b0f9410169e17afe","type":"file","file":"Кирпичики/Уравнение прямой.md","x":640,"y":1221,"width":400,"height":219,"color":"1"},
+		{"id":"86529cc8364dc941","type":"file","file":"Кирпичики/Колебательное движение.md","x":-2024,"y":-720,"width":404,"height":218,"color":"1"},
+		{"id":"584edf03e028fba4","type":"file","file":"Кирпичики/Измерение промежутков времени.md","x":-1645,"y":-400,"width":400,"height":243,"color":"1"},
+		{"id":"83f028e1dc53ac0f","type":"file","file":"Кирпичики/Как устроен штангенциркуль.md","x":-2740,"y":409,"width":420,"height":237,"color":"1"},
+		{"id":"1d20074147829fa1","type":"file","file":"Кирпичики/Описание движения точки.md","x":-600,"y":-1139,"width":420,"height":257,"color":"1"},
+		{"id":"e6ce9138bfc07f70","type":"file","file":"Кирпичики/Равномерное движение и его скорость.md","x":0,"y":-1133,"width":440,"height":245,"color":"1"},
+		{"id":"a59ab0fdd60bd3c5","type":"file","file":"Кирпичики/Знак скорости равномерного движения.md","x":600,"y":-1141,"width":580,"height":260,"color":"1"},
+		{"id":"52efcba30b523a37","type":"file","file":"Кирпичики/Относительность движения.md","x":-2760,"y":-1120,"width":399,"height":218,"color":"1"},
+		{"id":"22dd18478606859d","type":"file","file":"Кирпичики/Описание положения на ориентированной кривой.md","x":-1095,"y":-80,"width":385,"height":245,"color":"1"},
+		{"id":"b8a36590720cc6f0","type":"file","file":"Кирпичики/Перемещение вдоль ориентированной кривой.md","x":-590,"y":-82,"width":560,"height":250,"color":"1"},
+		{"id":"83343db763e48c48","type":"file","file":"Кирпичики/Путь.md","x":40,"y":417,"width":320,"height":220,"color":"1"},
+		{"id":"fda7c5d7ee82df13","type":"file","file":"Кирпичики/Одномерное перемещение.md","x":-730,"y":417,"width":420,"height":221,"color":"1"},
+		{"id":"270b04aa9ce6d0b7","type":"file","file":"Кирпичики/Физическая величина и ее приращение.md","x":-740,"y":1201,"width":440,"height":260,"color":"1"},
+		{"id":"ab2ed2432c7d1d2e","type":"file","file":"Кирпичики/Способы описания любой физической величины.md","x":0,"y":1201,"width":400,"height":260,"color":"1"},
+		{"id":"20c06c81b0d866bf","type":"file","file":"Кирпичики/Единицы измерения скорости.md","x":1320,"y":-1121,"width":440,"height":220,"color":"1"},
+		{"id":"8a83078b615770c1","type":"file","file":"Кирпичики/Описание равномерного движения через путь.md","x":1920,"y":-1151,"width":520,"height":280,"color":"1"},
+		{"id":"02207c81383f586c","type":"file","file":"Кирпичики/Описание равномерного движения через координату.md","x":2680,"y":-1136,"width":406,"height":251,"color":"1"},
+		{"id":"5e614377b37ba741","type":"file","file":"Кирпичики/Относительность положения.md","x":-3240,"y":-1136,"width":310,"height":251,"color":"1"},
+		{"id":"e7dbadca9f65cca3","type":"file","file":"Кирпичики/Движение.md","x":-3800,"y":-1118,"width":380,"height":215,"color":"1"}
 	],
 	"edges":[
 		{"id":"f1bb778a008c2445","fromNode":"52efcba30b523a37","fromSide":"right","toNode":"9db759da9d44052c","toSide":"left"},
-		{"id":"b795388e96dbabee","fromNode":"c4aea82e64de534a","fromSide":"right","toNode":"83f028e1dc53ac0f","toSide":"left"},
 		{"id":"8e057fe395d42153","fromNode":"9db759da9d44052c","fromSide":"right","toNode":"882759d338605bc1","toSide":"left"},
-		{"id":"bd244d261ebba1da","fromNode":"c4aea82e64de534a","fromSide":"bottom","toNode":"584edf03e028fba4","toSide":"top"},
-		{"id":"21174aec88fd5382","fromNode":"86529cc8364dc941","fromSide":"right","toNode":"584edf03e028fba4","toSide":"left"},
-		{
-			"id":"4d6da0334e407481",
-			"styleAttributes":{
-				"path":null,
-				"pathfindingMethod":null
-			},
-			"toFloating":false,
-			"fromFloating":false,
-			"fromNode":"e7dbadca9f65cca3",
-			"fromSide":"right",
-			"toNode":"52efcba30b523a37",
-			"toSide":"left"
-		},
 		{
 			"id":"d7a61f9e37c236fb",
 			"toFloating":false,
@@ -62,14 +54,13 @@
 		{"id":"6abf8c81d80d2709","fromNode":"882759d338605bc1","fromSide":"right","toNode":"b6666860a7fb25af","toSide":"left"},
 		{"id":"3e10e29cff01b001","fromNode":"b6666860a7fb25af","fromSide":"bottom","toNode":"86529cc8364dc941","toSide":"top"},
 		{"id":"eb4ed3d7992c770f","fromNode":"1d20074147829fa1","fromSide":"right","toNode":"e6ce9138bfc07f70","toSide":"left"},
-		{"id":"70eb474e666aa942","fromFloating":false,"toFloating":false,"fromNode":"c4aea82e64de534a","fromSide":"top","toNode":"e6ce9138bfc07f70","toSide":"bottom"},
 		{
 			"id":"fe43cd3befa79126",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"584edf03e028fba4",
 			"fromSide":"right",
-			"toNode":"e6ce9138bfc07f70",
+			"toNode":"1d20074147829fa1",
 			"toSide":"bottom"
 		},
 		{
@@ -100,13 +91,168 @@
 			"toSide":"left"
 		},
 		{
-			"id":"1ab559f39f4d9519",
+			"id":"2e28fcca88ed5f26",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"20c06c81b0d866bf",
+			"fromSide":"right",
+			"toNode":"8a83078b615770c1",
+			"toSide":"left"
+		},
+		{
+			"id":"db44c22ff70ae368",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"ab2ed2432c7d1d2e",
+			"fromSide":"right",
+			"toNode":"b0f9410169e17afe",
+			"toSide":"left"
+		},
+		{
+			"id":"b4c202d41cb92b87",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"423fb29ba36849cd",
+			"fromSide":"right",
+			"toNode":"fda7c5d7ee82df13",
+			"toSide":"left"
+		},
+		{
+			"id":"35ec3637ed757d1f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"5e614377b37ba741",
+			"fromSide":"right",
+			"toNode":"52efcba30b523a37",
+			"toSide":"left"
+		},
+		{
+			"id":"3acd0844899fe455",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"86529cc8364dc941",
+			"fromSide":"bottom",
+			"toNode":"584edf03e028fba4",
+			"toSide":"left"
+		},
+		{
+			"id":"c60aa01d1b778b44",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c4aea82e64de534a",
+			"fromSide":"right",
+			"toNode":"423fb29ba36849cd",
+			"toSide":"left"
+		},
+		{
+			"id":"158a936bdf671366",
 			"styleAttributes":{},
 			"toFloating":false,
 			"fromNode":"270b04aa9ce6d0b7",
+			"fromSide":"top",
+			"toNode":"fda7c5d7ee82df13",
+			"toSide":"bottom"
+		},
+		{
+			"id":"2499f14dedcf1552",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"b0f9410169e17afe",
+			"fromSide":"right",
+			"toNode":"8a83078b615770c1",
+			"toSide":"bottom"
+		},
+		{
+			"id":"ab57bd5a3c7e8e37",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fda7c5d7ee82df13",
+			"fromSide":"right",
+			"toNode":"83343db763e48c48",
+			"toSide":"left"
+		},
+		{
+			"id":"75a98e76d17fb44d",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"b6666860a7fb25af",
 			"fromSide":"bottom",
-			"toNode":"1d20074147829fa1",
+			"toNode":"423fb29ba36849cd",
 			"toSide":"top"
+		},
+		{
+			"id":"898643bdd9e5ea08",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromFloating":false,
+			"fromNode":"22dd18478606859d",
+			"fromSide":"right",
+			"toNode":"b8a36590720cc6f0",
+			"toSide":"left"
+		},
+		{
+			"id":"438d13a7a0d247a2",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c4aea82e64de534a",
+			"fromSide":"top",
+			"toNode":"584edf03e028fba4",
+			"toSide":"bottom"
+		},
+		{
+			"id":"130d5f3190ac9030",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"fda7c5d7ee82df13",
+			"fromSide":"top",
+			"toNode":"22dd18478606859d",
+			"toSide":"bottom"
+		},
+		{
+			"id":"66490b0b8ccba0ee",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"83343db763e48c48",
+			"fromSide":"top",
+			"toNode":"1d20074147829fa1",
+			"toSide":"bottom"
+		},
+		{
+			"id":"d24ace7e6c478922",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"b8a36590720cc6f0",
+			"fromSide":"bottom",
+			"toNode":"83343db763e48c48",
+			"toSide":"left"
+		},
+		{
+			"id":"4d0218fc9d3d676f",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"8a83078b615770c1",
+			"fromSide":"right",
+			"toNode":"02207c81383f586c",
+			"toSide":"left"
+		},
+		{
+			"id":"ab103044e6a3fad4",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"c4aea82e64de534a",
+			"fromSide":"left",
+			"toNode":"83f028e1dc53ac0f",
+			"toSide":"right"
+		},
+		{
+			"id":"9f754788ff71b840",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"e7dbadca9f65cca3",
+			"fromSide":"right",
+			"toNode":"5e614377b37ba741",
+			"toSide":"left"
 		}
 	],
 	"metadata":{

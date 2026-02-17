@@ -22,6 +22,12 @@
       "type": "file",
       "hiddenInNav": false,
       "hiddenInBookmarks": false
+    },
+    {
+      "path": "scripts",
+      "type": "folder",
+      "hiddenInNav": true,
+      "hiddenInBookmarks": false
     }
   ],
   "alwaysHideInBookmarks": false,
