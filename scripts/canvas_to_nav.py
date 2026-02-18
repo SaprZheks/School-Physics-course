@@ -14,9 +14,9 @@ def main():
         nodes = {}
 
         for node in canvas['nodes']:
-            # id : [name, taken, inputs, outputs]
+            # id : [path, taken, inputs, outputs]
             nodes[node['id']] = {
-                'name'    : node['file'],
+                'path'    : node['file'],
                 'taken'   : False,
                 'inputs'  : [],
                 'outputs' : []
@@ -33,11 +33,62 @@ def main():
         content +="## Кинематика\n"
 
         for id in sorted_ids:
-            name = re.search(r'Кирпичики/(.*?)\.md', nodes[id]['name']).group(1)
+            name = name_from_path(nodes[id]['path'])
             content += "[[Кирпичики/" + name + "|" + name +"]]" + '\n'
         content
         with open("Навигация по курсу.md", "w", encoding="utf-8") as file:
             file.write(content)
+        
+        ####################################################
+        #                                                  #
+        #      РАССТАНОВКА ССЫЛОК ДЛЯ КАЖДОЙ ЗАМЕТКИ       #
+        #                                                  #
+        ####################################################
+
+        pattern = r"\-{3}[\s\S]*?Уровень[\s\S]*?\-{3}\n" 
+        pattern_exists = (
+                    r"(\-{3}[\s\S]*?Уровень[\s\S]*?\-{3}\n)"
+                    r"<div style=\"display:\s*flex;\s*justify-content:\s*space-between;\">"
+                    r"[\s\S]*?"
+                    r"</div>\n\n"
+        )
+
+        # Все заметки
+        for i in range(len(sorted_ids)):
+            id = sorted_ids[i]
+            path = nodes[id]['path']
+
+            # Формирование строки со ссылками
+            new_line = "<div style=\"display: flex; justify-content: space-between;\">"
+
+            # Предыдущая
+            if i > 0:
+                id_prev = sorted_ids[i-1]
+                name_prev = name_from_path(nodes[id_prev]['path'])
+                new_line += "<a href=\"Кирпичики/" + name_prev + "\" class=\"internal-link\">Предыдущая</a>"
+
+            # Следующая
+            if i < (len(sorted_ids)-1):
+                id_next = sorted_ids[i+1]
+                name_next = name_from_path(nodes[id_next]['path'])
+                new_line += "<a href=\"Кирпичики/" + name_next + "\" class=\"internal-link\" style=\"margin-left: auto;\">Следующая</a>"
+
+            # Конец
+            new_line += "</div>\n\n"
+
+            # Чтение заметки
+            with open(path, "r", encoding="utf-8") as file:
+                content = file.read()
+
+            # Если ссылки уже есть и их надо просто обновить
+            if re.search(pattern_exists, content):
+                updated_content = re.sub(pattern_exists, r"\g<1>" + new_line, content)
+            else:
+                updated_content = re.sub(pattern, r"\g<0>" + new_line, content)
+
+            # Запись изменений
+            with open(path, "w", encoding="utf-8") as file:
+                file.write(updated_content)
 
 def topologicalSort(nodes):
     ans = []
@@ -65,6 +116,9 @@ def dfs(node, nodes, ans):
             dfs(output, nodes, ans)
 
     ans.append(node)
+
+def name_from_path(path):
+    return re.search(r'Кирпичики/(.*?)\.md', path).group(1)
 
 
 if __name__ == "__main__":
